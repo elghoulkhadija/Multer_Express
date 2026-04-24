@@ -15,14 +15,14 @@ Elle permet de gérer les stagiaires avec :
 ## 🧰 Technologie utiliser
 
 ```txt
-Node.js
-Express.js
-MongoDB + Mongoose
-EJS (Template Engine)
-Multer (upload images)
-Express Router
-
-📁 Structure du projet
+        Node.js
+        Express.js
+        MongoDB + Mongoose
+        EJS (Template Engine)
+        Multer (upload images)
+        Express Router
+````
+## 📁 Structure du projet
         Expres_exemple/
         │
         ├── controller/
@@ -49,24 +49,22 @@ Express Router
         ├── server.js
         ├── .env
         └── package.json
+## ⚙️ Installation
+   npm install
 
-⚙️ Installation
-npm install
-
-▶️ Lancer le projet
+##  ▶️ Lancer le projet
     node server.js ou  npx nodemon server.js
-
-🔐 Configuration .env
+## 🔐 Configuration .env
     PORT=3000
     MONGO_URI=mongodb://localhost:27017/stagiaires_db
-⚙️ Middleware Express
+## ⚙️ Middleware Express
     app.use(express.json());
     app.use(express.urlencoded({extended:true}));
     app.use('/api',SystemeRoute);
     app.set('view engine', 'ejs');
     Stockage : public/images/
 
-🧪 Fonctionnalités
+## 🧪 Fonctionnalités
 
     ✔ Ajouter stagiaire + image
     ✔ Modifier stagiaire + image optionnelle
@@ -75,6 +73,6 @@ npm install
     ✔ Upload sécurisé des fichiers
 
 
-👨‍💻 Auteur
+## 👨‍💻 Auteur
 
 Projet MVC Express.js - Formation développée
